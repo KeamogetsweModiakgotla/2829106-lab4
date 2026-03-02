@@ -28,7 +28,7 @@ async function searchCountry(countryName) {
   
    countryInfo.innerHTML = "";
   borderingSection.innerHTML = "";
-  errorMsg.textContent = "";
+  errormessage.textContent = "";
 
   
   spinner.classList.remove("hidden");
