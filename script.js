@@ -53,6 +53,7 @@ async function searchCountry(countryName) {
 
     
     if (country.borders && country.borders.length > 0) {
+        borderingSection.innerHTML = "<h3>Bordering Countries</h3>";
       for (let code of country.borders) {
         try {
           const borderResp = await fetch(`https://restcountries.com/v3.1/alpha/${code}`);
@@ -71,6 +72,9 @@ async function searchCountry(countryName) {
         }
       }
     }
+    else {
+  borderingSection.innerHTML = "<p>No bordering countries</p>";
+}
 
   } catch (error) {
     console.error(error);
