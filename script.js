@@ -26,7 +26,10 @@ async function searchCountry(countryName) {
   const errormessage = document.getElementById("error-message");
 
   
-  
+   countryInfo.innerHTML = "";
+  borderingSection.innerHTML = "";
+  errorMsg.textContent = "";
+
   
   spinner.classList.remove("hidden");
 
